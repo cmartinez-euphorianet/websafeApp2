@@ -1,0 +1,22 @@
+.color-list{
+  display: block;
+}
+.color-list li{
+  display: block;
+/*  float: left;*/
+  padding: 1em;
+}
+.color-list li i{
+  display: inline-block;
+  padding: 0.35em;
+  margin-right: 0.1em;
+  border-radius: 0.2em;
+  background: rgba(255, 255, 255, 0.5);
+}
+.color-list li span{
+  color: white;
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0.2em;
+  border-radius: 0.2em;
+}
