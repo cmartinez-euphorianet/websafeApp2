@@ -1,21 +1,36 @@
+.label_home{
+    margin: 0 auto;
+    text-align: center;
+}
+.label_home img{
+    width: 288px;
+}
 .color-list{
   display: block;
+}
+.color-list ul{
+    padding-left: 0;
 }
 .color-list li{
   display: block;
 /*  float: left;*/
   padding: 1em;
+  height: 1.2em;
 }
 .color-list li i{
-  display: inline-block;
+  display: block;
+  float: left;
+  width: 0.5em;
+  height: 0.5em;
   padding: 0.35em;
-  margin-right: 0.1em;
+  margin-right: 0.5em;
   border-radius: 0.2em;
   background: rgba(255, 255, 255, 0.5);
 }
 .color-list li span{
   color: white;
-  display: inline-block;
+  display: block;
+  float: left;
   background: rgba(0, 0, 0, 0.5);
   padding: 0.2em;
   border-radius: 0.2em;

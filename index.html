@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>Websafe Color's</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -13,13 +13,15 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="webcolors.js" type="text/javascript"></script>
+
   <script src="https://s3.amazonaws.com/codiqa-cdn/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
   <script src="https://s3.amazonaws.com/codiqa-cdn/codiqa.ext.js"></script>
 
   <script src="script.js"></script>
 
 </head>
-<body>
+<body onload="readyfunction()">
 <div data-role="page" data-control-title="Home" id="page1">
     <div data-theme="a" data-role="header">
         <h1 class="ui-title">
@@ -30,25 +32,26 @@
         <div id="a-z" data-role="navbar" data-iconpos="top" class="OrderMenu">
             <ul>
                 <li>
-                    <a href="#page2" data-transition="turn" data-theme="" data-icon="star">
+                    <a href="#page2" data-transition="pop" data-theme="" data-icon="star">
                         A-Z
                     </a>
                 </li>
                 <li>
-                    <a href="#page1" data-transition="turn" data-theme="" data-icon="star">
+                    <a href="#page3" data-transition="pop" data-theme="" data-icon="star">
                         Lighten
                     </a>
                 </li>
                 <li>
-                    <a href="#page1" data-transition="fade" data-theme="" data-icon="star">
+                    <a href="#page4" data-transition="pop" data-theme="" data-icon="star">
                         Matiz
                     </a>
                 </li>
             </ul>
         </div>
+        <br />
         <div style="width: 288px; height: 200px; position: relative; background-color: #fbfbfb; border: 1px solid #b8b8b8;"
         data-controltype="image" class="label_home">
-            <img src="https://codiqa.com/static/images/v2/image.png" alt="image" style="position: absolute; top: 50%; left: 50%; margin-left: -16px; margin-top: -18px">
+            <img src="logo.png" alt="websafe_app" />
         </div>
     </div>
 </div>
@@ -67,12 +70,12 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#page1" data-transition="turn" data-theme="" data-icon="star">
+                    <a href="#page3" data-transition="turn" data-theme="" data-icon="star">
                         Lighten
                     </a>
                 </li>
                 <li>
-                    <a href="#page1" data-transition="fade" data-theme="" data-icon="star">
+                    <a href="#page4" data-transition="turn" data-theme="" data-icon="star">
                         Matiz
                     </a>
                 </li>
@@ -80,428 +83,75 @@
         </div>
         <div data-controltype="htmlblock" class="color-list">
             <ul>
-                <li style="background: AliceBlue">
-                    <i></i><span>AliceBlue</span>
-                <li style="background: AntiqueWhite">
-                   <i></i><span> AntiqueWhite</span>
-                </li>
-                <li style="background: Aqua">
-                   <i></i><span> Aqua</span>
-                </li>
-                <li style="background: Aquamarine">
-                   <i></i><span> Aquamarine</span>
-                </li>
-                <li style="background: Azure">
-                   <i></i><span> Azure</span>
-                </li>
-                <li style="background: Beige">
-                   <i></i><span> Beige</span>
-                </li>
-                <li style="background: Bisque">
-                   <i></i><span> Bisque</span>
-                </li>
-                <li style="background: Black">
-                   <i></i><span> Black</span>
-                </li>
-                <li style="background: BlanchedAlmond">
-                   <i></i><span> BlanchedAlmond</span>
-                </li>
-                <li style="background: Blue">
-                   <i></i><span> Blue</span>
-                </li>
-                <li style="background: BlueViolet">
-                   <i></i><span> BlueViolet</span>
-                </li>
-                <li style="background: Brown">
-                   <i></i><span> Brown</span>
-                </li>
-                <li style="background: BurlyWood">
-                   <i></i><span> BurlyWood</span>
-                </li>
-                <li style="background: CadetBlue">
-                   <i></i><span> CadetBlue</span>
-                </li>
-                <li style="background: Chartreuse">
-                   <i></i><span> Chartreuse</span>
-                </li>
-                <li style="background: Chocolate">
-                   <i></i><span> Chocolate</span>
-                </li>
-                <li style="background: Coral">
-                   <i></i><span> Coral</span>
-                </li>
-                <li style="background: CornflowerBlue">
-                   <i></i><span> CornflowerBlue</span>
-                </li>
-                <li style="background: Cornsilk">
-                   <i></i><span> Cornsilk</span>
-                </li>
-                <li style="background: Crimson">
-                   <i></i><span> Crimson</span>
-                </li>
-                <li style="background: Cyan">
-                   <i></i><span> Cyan</span>
-                </li>
-                <li style="background: DarkBlue">
-                   <i></i><span> DarkBlue</span>
-                </li>
-                <li style="background: DarkCyan">
-                   <i></i><span> DarkCyan</span>
-                </li>
-                <li style="background: DarkGoldenRod">
-                   <i></i><span> DarkGoldenRod</span>
-                </li>
-                <li style="background: DarkGray">
-                   <i></i><span> DarkGray</span>
-                </li>
-                <li style="background: DarkGreen">
-                   <i></i><span> DarkGreen</span>
-                </li>
-                <li style="background: DarkKhaki">
-                   <i></i><span> DarkKhaki</span>
-                </li>
-                <li style="background: DarkMagenta">
-                   <i></i><span> DarkMagenta</span>
-                </li>
-                <li style="background: DarkOliveGreen">
-                   <i></i><span> DarkOliveGreen</span>
-                </li>
-                <li style="background: DarkOrange">
-                   <i></i><span> DarkOrange</span>
-                </li>
-                <li style="background: DarkOrchid">
-                   <i></i><span> DarkOrchid</span>
-                </li>
-                <li style="background: DarkRed">
-                   <i></i><span> DarkRed</span>
-                </li>
-                <li style="background: DarkSalmon">
-                   <i></i><span> DarkSalmon</span>
-                </li>
-                <li style="background: DarkSeaGreen">
-                   <i></i><span> DarkSeaGreen</span>
-                </li>
-                <li style="background: DarkSlateBlue">
-                   <i></i><span> DarkSlateBlue</span>
-                </li>
-                <li style="background: DarkSlateGray">
-                   <i></i><span> DarkSlateGray</span>
-                </li>
-                <li style="background: DarkTurquoise">
-                   <i></i><span> DarkTurquoise</span>
-                </li>
-                <li style="background: DarkViolet">
-                   <i></i><span> DarkViolet</span>
-                </li>
-                <li style="background: DeepPink">
-                   <i></i><span> DeepPink</span>
-                </li>
-                <li style="background: DeepSkyBlue">
-                   <i></i><span> DeepSkyBlue</span>
-                </li>
-                <li style="background: DimGray">
-                   <i></i><span> DimGray</span>
-                </li>
-                <li style="background: DodgerBlue">
-                   <i></i><span> DodgerBlue</span>
-                </li>
-                <li style="background: FireBrick">
-                   <i></i><span> FireBrick</span>
-                </li>
-                <li style="background: FloralWhite">
-                   <i></i><span> FloralWhite</span>
-                </li>
-                <li style="background: ForestGreen">
-                   <i></i><span> ForestGreen</span>
-                </li>
-                <li style="background: Fuchsia">
-                   <i></i><span> Fuchsia</span>
-                </li>
-                <li style="background: Gainsboro">
-                   <i></i><span> Gainsboro</span>
-                </li>
-                <li style="background: GhostWhite">
-                   <i></i><span> GhostWhite</span>
-                </li>
-                <li style="background: Gold">
-                   <i></i><span> Gold</span>
-                </li>
-                <li style="background: GoldenRod">
-                   <i></i><span> GoldenRod</span>
-                </li>
-                <li style="background: Gray">
-                   <i></i><span> Gray</span>
-                </li>
-                <li style="background: Green">
-                   <i></i><span> Green</span>
-                </li>
-                <li style="background: GreenYellow">
-                   <i></i><span> GreenYellow</span>
-                </li>
-                <li style="background: HoneyDew">
-                   <i></i><span> HoneyDew</span>
-                </li>
-                <li style="background: HotPink">
-                   <i></i><span> HotPink</span>
-                </li>
-                <li style="background: IndianRed">
-                   <i></i><span> IndianRed</span>
-                </li>
-                <li style="background: Indigo">
-                   <i></i><span> Indigo</span>
-                </li>
-                <li style="background: Ivory">
-                   <i></i><span> Ivory</span>
-                </li>
-                <li style="background: Khaki">
-                   <i></i><span> Khaki</span>
-                </li>
-                <li style="background: Lavender">
-                   <i></i><span> Lavender</span>
-                </li>
-                <li style="background: LavenderBlush">
-                   <i></i><span> LavenderBlush</span>
-                </li>
-                <li style="background: LawnGreen">
-                   <i></i><span> LawnGreen</span>
-                </li>
-                <li style="background: LemonChiffon">
-                   <i></i><span> LemonChiffon</span>
-                </li>
-                <li style="background: LightBlue">
-                   <i></i><span> LightBlue</span>
-                </li>
-                <li style="background: LightCoral">
-                   <i></i><span> LightCoral</span>
-                </li>
-                <li style="background: LightCyan">
-                   <i></i><span> LightCyan</span>
-                </li>
-                <li style="background: LightGoldenRodYellow">
-                   <i></i><span> LightGoldenRodYellow</span>
-                </li>
-                <li style="background: LightGray">
-                   <i></i><span> LightGray</span>
-                </li>
-                <li style="background: LightGreen">
-                   <i></i><span> LightGreen</span>
-                </li>
-                <li style="background: LightPink">
-                   <i></i><span> LightPink</span>
-                </li>
-                <li style="background: LightSalmon">
-                   <i></i><span> LightSalmon</span>
-                </li>
-                <li style="background: LightSeaGreen">
-                   <i></i><span> LightSeaGreen</span>
-                </li>
-                <li style="background: LightSkyBlue">
-                   <i></i><span> LightSkyBlue</span>
-                </li>
-                <li style="background: LightSlateGray">
-                   <i></i><span> LightSlateGray</span>
-                </li>
-                <li style="background: LightSteelBlue">
-                   <i></i><span> LightSteelBlue</span>
-                </li>
-                <li style="background: LightYellow">
-                   <i></i><span> LightYellow</span>
-                </li>
-                <li style="background: Lime">
-                   <i></i><span> Lime</span>
-                </li>
-                <li style="background: LimeGreen">
-                   <i></i><span> LimeGreen</span>
-                </li>
-                <li style="background: Linen">
-                   <i></i><span> Linen</span>
-                </li>
-                <li style="background: Magenta">
-                   <i></i><span> Magenta</span>
-                </li>
-                <li style="background: Maroon">
-                   <i></i><span> Maroon</span>
-                </li>
-                <li style="background: MediumAquaMarine">
-                   <i></i><span> MediumAquaMarine</span>
-                </li>
-                <li style="background: MediumBlue">
-                   <i></i><span> MediumBlue</span>
-                </li>
-                <li style="background: MediumOrchid">
-                   <i></i><span> MediumOrchid</span>
-                </li>
-                <li style="background: MediumPurple">
-                   <i></i><span> MediumPurple</span>
-                </li>
-                <li style="background: MediumSeaGreen">
-                   <i></i><span> MediumSeaGreen</span>
-                </li>
-                <li style="background: MediumSlateBlue">
-                   <i></i><span> MediumSlateBlue</span>
-                </li>
-                <li style="background: MediumSpringGreen">
-                   <i></i><span> MediumSpringGreen</span>
-                </li>
-                <li style="background: MediumTurquoise">
-                   <i></i><span> MediumTurquoise</span>
-                </li>
-                <li style="background: MediumVioletRed">
-                   <i></i><span> MediumVioletRed</span>
-                </li>
-                <li style="background: MidnightBlue">
-                   <i></i><span> MidnightBlue</span>
-                </li>
-                <li style="background: MintCream">
-                   <i></i><span> MintCream</span>
-                </li>
-                <li style="background: MistyRose">
-                   <i></i><span> MistyRose</span>
-                </li>
-                <li style="background: Moccasin">
-                   <i></i><span> Moccasin</span>
-                </li>
-                <li style="background: NavajoWhite">
-                   <i></i><span> NavajoWhite</span>
-                </li>
-                <li style="background: Navy">
-                   <i></i><span> Navy</span>
-                </li>
-                <li style="background: OldLace">
-                   <i></i><span> OldLace</span>
-                </li>
-                <li style="background: Olive">
-                   <i></i><span> Olive</span>
-                </li>
-                <li style="background: OliveDrab">
-                   <i></i><span> OliveDrab</span>
-                </li>
-                <li style="background: Orange">
-                   <i></i><span> Orange</span>
-                </li>
-                <li style="background: OrangeRed">
-                   <i></i><span> OrangeRed</span>
-                </li>
-                <li style="background: Orchid">
-                   <i></i><span> Orchid</span>
-                </li>
-                <li style="background: PaleGoldenRod">
-                   <i></i><span> PaleGoldenRod</span>
-                </li>
-                <li style="background: PaleGreen">
-                   <i></i><span> PaleGreen</span>
-                </li>
-                <li style="background: PaleTurquoise">
-                   <i></i><span> PaleTurquoise</span>
-                </li>
-                <li style="background: PaleVioletRed">
-                   <i></i><span> PaleVioletRed</span>
-                </li>
-                <li style="background: PapayaWhip">
-                   <i></i><span> PapayaWhip</span>
-                </li>
-                <li style="background: PeachPuff">
-                   <i></i><span> PeachPuff</span>
-                </li>
-                <li style="background: Peru">
-                   <i></i><span> Peru</span>
-                </li>
-                <li style="background: Pink">
-                   <i></i><span> Pink</span>
-                </li>
-                <li style="background: Plum">
-                   <i></i><span> Plum</span>
-                </li>
-                <li style="background: PowderBlue">
-                   <i></i><span> PowderBlue</span>
-                </li>
-                <li style="background: Purple">
-                   <i></i><span> Purple</span>
-                </li>
-                <li style="background: Red">
-                   <i></i><span> Red</span>
-                </li>
-                <li style="background: RosyBrown">
-                   <i></i><span> RosyBrown</span>
-                </li>
-                <li style="background: RoyalBlue">
-                   <i></i><span> RoyalBlue</span>
-                </li>
-                <li style="background: SaddleBrown">
-                   <i></i><span> SaddleBrown</span>
-                </li>
-                <li style="background: Salmon">
-                   <i></i><span> Salmon</span>
-                </li>
-                <li style="background: SandyBrown">
-                   <i></i><span> SandyBrown</span>
-                </li>
-                <li style="background: SeaGreen">
-                   <i></i><span> SeaGreen</span>
-                </li>
-                <li style="background: SeaShell">
-                   <i></i><span> SeaShell</span>
-                </li>
-                <li style="background: Sienna">
-                   <i></i><span> Sienna</span>
-                </li>
-                <li style="background: Silver">
-                   <i></i><span> Silver</span>
-                </li>
-                <li style="background: SkyBlue">
-                   <i></i><span> SkyBlue</span>
-                </li>
-                <li style="background: SlateBlue">
-                   <i></i><span> SlateBlue</span>
-                </li>
-                <li style="background: SlateGray">
-                   <i></i><span> SlateGray</span>
-                </li>
-                <li style="background: Snow">
-                   <i></i><span> Snow</span>
-                </li>
-                <li style="background: SpringGreen">
-                   <i></i><span> SpringGreen</span>
-                </li>
-                <li style="background: SteelBlue">
-                   <i></i><span> SteelBlue</span>
-                </li>
-                <li style="background: Tan">
-                   <i></i><span> Tan</span>
-                </li>
-                <li style="background: Teal">
-                   <i></i><span> Teal</span>
-                </li>
-                <li style="background: Thistle">
-                   <i></i><span> Thistle</span>
-                </li>
-                <li style="background: Tomato">
-                   <i></i><span> Tomato</span>
-                </li>
-                <li style="background: Turquoise">
-                   <i></i><span> Turquoise</span>
-                </li>
-                <li style="background: Violet">
-                   <i></i><span> Violet</span>
-                </li>
-                <li style="background: Wheat">
-                   <i></i><span> Wheat</span>
-                </li>
-                <li style="background: White">
-                   <i></i><span> White</span>
-                </li>
-                <li style="background: WhiteSmoke">
-                   <i></i><span> WhiteSmoke</span>
-                </li>
-                <li style="background: Yellow">
-                   <i></i><span> Yellow</span>
-                </li>
-                <li style="background: YellowGreen">
-                   <i></i><span> YellowGreen</span>
-                </li>
             </ul>
         </div>
     </div>
 </div>
+<div data-role="page" data-control-title="Lighten" id="page3">
+    <div data-theme="a" data-role="header">
+        <h1 class="ui-title">
+            Lighten
+        </h1>
+    </div>
+    <div role="main" class="ui-content">
+        <div data-role="navbar" data-iconpos="top" class="OrderMenu">
+            <ul>
+                <li>
+                    <a href="#page2" data-transition="turn" data-theme="" data-icon="star">
+                        A-Z
+                    </a>
+                </li>
+                <li>
+                    <a href="#page3" data-transition="turn" data-theme="" data-icon="star">
+                        Lighten
+                    </a>
+                </li>
+                <li>
+                    <a href="#page4" data-transition="turn" data-theme="" data-icon="star">
+                        Matiz
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div data-controltype="htmlblock" class="color-list">
+            <ul>
+            </ul>
+        </div>
+    </div>
+</div>
+<div data-role="page" data-control-title="Matiz" id="page4">
+    <div data-theme="a" data-role="header">
+        <h1 class="ui-title">
+            Matiz
+        </h1>
+    </div>
+    <div role="main" class="ui-content">
+        <div data-role="navbar" data-iconpos="top" class="OrderMenu">
+            <ul>
+                <li>
+                    <a href="#page2" data-transition="turn" data-theme="" data-icon="star">
+                        A-Z
+                    </a>
+                </li>
+                <li>
+                    <a href="#page3" data-transition="turn" data-theme="" data-icon="star">
+                        Lighten
+                    </a>
+                </li>
+                <li>
+                    <a href="#page4" data-transition="turn" data-theme="" data-icon="star">
+                        Matiz
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div data-controltype="htmlblock" class="color-list">
+            <ul>
+            </ul>
+        </div>
+    </div>
+</div>
+    
+    
 </body>
 </html>
