@@ -18,7 +18,15 @@ function readyfunction() {
    wsOrderMatiz = [ 102, 90, 39, 55, 61, 106, 20, 110, 70, 115, 81, 32, 12, 43, 56, 65, 114, 127, 93, 118, 133, 33, 17, 101, 71, 122, 99, 140, 29, 53, 121, 117, 16, 119, 108, 109, 79, 15, 62, 7, 30, 13, 2, 130, 95, 9, 107, 94, 100, 136, 97, 44, 24, 50, 19, 49, 63, 59, 103, 27, 52, 98, 6, 67, 77, 139, 76, 54, 58, 26, 34, 45, 78, 69, 104, 37, 14, 112, 64, 40, 124, 73, 120, 86, 129, 1, 42, 128, 92, 126, 74, 75, 88, 18, 82, 4, 116, 134, 72, 89, 132, 83, 135, 91, 96, 113, 22, 28, 111, 60, 10, 46, 80, 48, 125, 35, 87, 85, 11, 57, 31, 38, 84, 36, 131, 23, 105, 3, 21, 66, 5, 8, 41, 51, 25, 123, 68, 47, 138, 137];
    for (c = 0; c < wsOrderAtoZ.length; c++){
        var wPs = eval(wsOrderAtoZ[c]-1);
-       jQuery("<li style='background:"+wsColorNames[wPs]+"'><i></i><span>"+wsColorNames[wPs]+"</span></li>)").appendTo(".color-list ul");
-   } 
+       jQuery("<li style='background:"+wsColorNames[wPs]+"'><i></i><span>"+wsColorNames[wPs]+"</span></li>)").appendTo("#page2 .color-list ul");
+   }
+   for (c = 0; c < wsOrderLight.length; c++){
+       var wPs = eval(wsOrderLight[c]-1);
+       jQuery("<li style='background:"+wsColorNames[wPs]+"'><i></i><span>"+wsColorNames[wPs]+"</span></li>)").appendTo("#page3 .color-list ul");
+   }
+   for (c = 0; c < wsOrderMatiz.length; c++){
+       var wPs = eval(wsOrderMatiz[c]-1);
+       jQuery("<li style='background:"+wsColorNames[wPs]+"'><i></i><span>"+wsColorNames[wPs]+"</span></li>)").appendTo("#page4 .color-list ul");
+   }
 //});
 }
