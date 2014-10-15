@@ -27,7 +27,7 @@
   border-radius: 0.2em;
   background: rgba(255, 255, 255, 0.5);
 }
-.color-list li span{
+.color-list li span.colorname{
   color: white;
   display: block;
   float: left;
@@ -35,3 +35,43 @@
   padding: 0.2em;
   border-radius: 0.2em;
 }
+.color-list li span.hexaCode{
+    display: none;
+}
+.color-list li span.rgbCode{
+    display: none;
+}
+.color-list li.show{
+    height: 30em;
+}
+.color-list li.show i{
+    display: none;
+}
+.color-list li.show span.colorname{
+    display: block;
+    margin-left: 0;
+    width: 97%;
+    font-size: 1.5em;
+    text-align: center;
+    float: none;
+}
+.color-list li.show span.hexaCode{
+    text-align: center;
+  color: black;
+  display: block;
+/*  float: left;*/
+  background: rgba(255, 255, 255, 0.75);
+  padding: 0.2em 0.5em;
+  margin: 0.2em auto;
+  border-radius: 0.2em;
+}
+.color-list li.show span.rgbCode{
+    text-align: center;
+  color: black;
+  display: block;
+  background: rgba(255, 255, 255, 0.75);
+  padding: 0.2em 0.5em;
+  margin: 0.2em auto;
+  border-radius: 0.2em;
+}
+
